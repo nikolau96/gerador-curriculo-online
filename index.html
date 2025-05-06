@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gerador de Currículo Online</title>
+    </head>
+    <body>
+        <header id="title-subtitle">
+            <h1 id="title">Gerador de Currículo Online</h1>
+            <h3 id="subtitle">Preencha os dados abaixo para gerar seu currículo</h3>
+        </header>
+        <section>
+            <form action="">
+                <div id="row-basic-data">
+                    <span id="input-name">
+                        <label>Nome</label>
+                        <input type="text" name="name" id="name">
+                    </span>
+                    <span id="input-email">
+                        <label>Email</label>
+                        <input type="text" name="email" id="email">
+                    </span>
+                    <span id="input-phone">
+                        <label>Celular</label>
+                        <input type="tel" name="phone" id="phone">
+                    </span>
+                </div>
+                <div id="row-address">
+                    <span id="input-postal-code">
+                        <label>CEP</label>
+                        <input type="number" name="postal-code" id="postal-code">
+                    </span>
+                    <span id="input-address">
+                        <label>Endere&ccedil;o</label>
+                        <input type="text" name="address" id="address">
+                    </span>
+                    <span id="input-number-address">
+                        <label>N&uacute;mero</label>
+                        <input type="number" name="number-address" id="number-address">
+                    </span>
+                    <span id="input-number2">
+                        <label>Complemento</label>
+                        <input type="text" name="number2" id="number2">
+                    </span>
+                    <span id="input-area">
+                        <label>Bairro</label>
+                        <input type="text" name="area" id="area">
+                    </span>
+                    <span id="input-city">
+                        <label>Cidade</label>
+                        <input type="text" name="city" id="city">
+                    </span>
+                    <span id="input-state">
+                        <label>UF</label>
+                        <select name="state" id="state" onchange="gerarEstado();"></select>
+                    </span>
+                </div>
+            </form>
+        </section>
+    </body>
+    <script src="./scripts/gerarEstado.js"></script>
+</html>

@@ -1,0 +1,7 @@
+gerador de currículo -> lógica
+
+-função para gerar o currículo
+
+O usuário vai digitar os dados nos campos. O gerador irá pegar esses dados e vai colocar nos campos definidos em um modelo de currículo
+
+Depois, o gerador vai pegar esse modelo e transformar em PDF
