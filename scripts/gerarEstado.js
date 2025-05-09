@@ -87,9 +87,18 @@ const estados = [
 ];
 
 function gerarEstado(){
+    console.log('ma oi');
     var estado = document.getElementById('state');
     var json_estado = estados;
+    console.log(estados);
+    console.log(json_estado);
+    estado.innerHTML = '';
     for(var i = 0; i < json_estado.length; i++){
-        estado += document.createElement('option');
+        let estado2 = document.createElement('option');
+        estado2.text = estados.nome;
+        estado2.value = estados.sigla;
+        estado.appendChild(estado2);
     }
+    //estado.innerHTML = estado2;
+    console.log('saiu!');
 }
