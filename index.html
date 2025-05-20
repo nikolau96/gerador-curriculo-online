@@ -10,75 +10,87 @@
             <h1 id="title">Gerador de Currículo Online</h1>
             <h3 id="subtitle">Preencha os dados abaixo para gerar seu currículo</h3>
         </header>
-        <section>
-            <form action="">
-                <div id="row-basic-data">
-                    <span id="input-name">
-                        <label>Nome</label>
-                        <input type="text" name="name" id="name">
-                    </span>
-                    <span id="input-email">
-                        <label>Email</label>
-                        <input type="text" name="email" id="email">
-                    </span>
-                    <span id="input-phone">
-                        <label>Celular</label>
-                        <input type="tel" name="phone" id="phone">
-                    </span>
-                </div>
-                <div id="row-address">
-                    <span id="input-postal-code">
-                        <label>CEP</label>
-                        <input type="number" name="postal-code" id="postal-code">
-                    </span>
-                    <span id="input-address">
-                        <label>Endere&ccedil;o</label>
-                        <input type="text" name="address" id="address">
-                    </span>
-                    <span id="input-number-address">
-                        <label>N&uacute;mero</label>
-                        <input type="number" name="number-address" id="number-address">
-                    </span>
-                    <span id="input-number2">
-                        <label>Complemento</label>
-                        <input type="text" name="number2" id="number2">
-                    </span>
-                    <span id="input-area">
-                        <label>Bairro</label>
-                        <input type="text" name="area" id="area">
-                    </span>
-                    <span id="input-city">
-                        <label>Cidade</label>
-                        <input type="text" name="city" id="city">
-                    </span>
-                    <span id="input-state">
-                        <label>UF</label>
-                        <select name="state" id="state" onclick="gerarEstado();"></select>
-                    </span>
-                </div>
-                <div id="row-contact">
-                    <span id="input-linkedin">
-                        <label>Linkedin</label>
-                        <input type="text" name="linkedin" id="linkedin">
-                    </span>
-                    <span id="input-social-network">
-                        <label>Rede Social</label>
-                        <input type="text" name="socialNetwork" id="socialNetwork">
-                    </span>
-                    <span id="input-site">
-                        <label>Site</label>
-                        <input type="text" name="site" id="site">
-                    </span>
-                    <span id="input-portfolio">
-                        <label>Portf&oacute;lio</label>
-                        <input type="text" name="portfolio" id="portfolio">
-                    </span>
-                </div>
-                <div id="row-resumo">
-                    <label>Resumo Profissional</label>
-                    <input type="text" name="resumo" id="resumo" maxlength="4000">
-                </div>
-            </form>
+        <section id="page-content">
+            <div id="row-basic-data">
+                <span id="input-name">
+                    <label>Nome</label>
+                    <input type="text" name="name" id="name">
+                </span>
+                <span id="input-email">
+                    <label>Email</label>
+                    <input type="text" name="email" id="email">
+                </span>
+                <span id="input-phone">
+                    <label>Celular</label>
+                    <input type="tel" name="phone" id="phone">
+                </span>
+            </div>
+            <div id="row-address">
+                <span id="input-postal-code">
+                    <label>CEP</label>
+                    <input type="number" name="postal-code" id="postal-code">
+                </span>
+                <span id="input-address">
+                    <label>Endere&ccedil;o</label>
+                    <input type="text" name="address" id="address">
+                </span>
+                <span id="input-number-address">
+                    <label>N&uacute;mero</label>
+                    <input type="number" name="number-address" id="number-address">
+                </span>
+                <span id="input-number2">
+                    <label>Complemento</label>
+                    <input type="text" name="number2" id="number2">
+                </span>
+                <span id="input-area">
+                    <label>Bairro</label>
+                    <input type="text" name="area" id="area">
+                </span>
+                <span id="input-city">
+                    <label>Cidade</label>
+                    <input type="text" name="city" id="city">
+                </span>
+                <span id="input-state">
+                    <label>UF</label>
+                    <select name="state" id="state" onclick="gerarEstado();"></select>
+                </span>
+            </div>
+            <div id="row-contact">
+                <span id="input-linkedin">
+                    <label>Linkedin</label>
+                    <input type="text" name="linkedin" id="linkedin">
+                </span>
+                <span id="input-social-network">
+                    <label>Rede Social</label>
+                    <input type="text" name="socialNetwork" id="socialNetwork">
+                </span>
+                <span id="input-site">
+                    <label>Site</label>
+                    <input type="text" name="site" id="site">
+                </span>
+                <span id="input-portfolio">
+                    <label>Portf&oacute;lio</label>
+                    <input type="text" name="portfolio" id="portfolio">
+                </span>
+            </div>
+            <div id="row-resumo">
+                <label>Resumo Profissional</label>
+                <input type="text" name="resumo" id="resumo" maxlength="4000">
+            </div>
+            <div id="row-objetivo">
+                <label>Objetivo/&Aacute;rea de atua&ccedil;&atilde;o</label>
+                <input type="text" name="objetivo" id="objetivo">
+            </div>
+            <div id="row-certifications">
+                <span id="input-faculdade">
+                    <label>Forma&ccedil;&atilde;o Acad&ecirc;mica</label>
+                    <input type="text">
+                </span>
+                <span id="input-certificacao">
+                    <label>Certifica&ccedil;&atilde;o/Cursos</label>
+                    <input type="text" name="certificacao" id="certificacao">
+                </span>
+            </div>
         </section>
     </body>
     <script src="./scripts/gerarEstado.js"></script>
