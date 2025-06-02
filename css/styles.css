@@ -33,10 +33,6 @@ body{
     font-size: larger;
 }
 
-#row-basic-data, #row-address, #row-contact, #row-resumo, #row-objetivo, #row-certifications, #row-habilidades, #row-idiomas, #row-xp, #row-extras{
-    margin-bottom: 10px;
-}
-
 #botao{
     text-align: center;
     justify-content: center;
@@ -47,8 +43,62 @@ body{
     width:70px; 
     font-size: large;
     background-color: lime;
-    color: rgb(40, 64, 64);
+    color: rgb(76, 50, 50);
     border: none;
     box-shadow: 50%;
     border-radius: 5px;
+}
+
+span{
+    margin-bottom: 30px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+input, textarea, select{
+    width: 350px;
+    height: 25px;
+    background-color: lightgray;
+    border: 3px solid rgb(111, 111, 111);
+    border-radius: 10px;
+    display: block;
+    resize: none;
+}
+
+#name{
+    width: 600px;
+}
+
+#email{
+    width: 500px;
+}
+
+#ddd, #number-address{
+    width: 100px;
+}
+
+#phone, #postal-code{
+    width: 150px;
+}
+
+#address, #area{
+    width: 750px;
+}
+
+#city{
+    width: 400px;
+}
+
+#linkedin, #site, #portfolio{
+    width: 450px;
+}
+
+#resumo, #objetivo, #faculdade, #certificacao, #habilidades, #idiomas, #extras, #xp{
+    width: 675px;
+    height: 300px;
+}
+
+#state{
+    width: 230px;
+    height: 35px;
 }

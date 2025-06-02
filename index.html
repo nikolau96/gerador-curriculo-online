@@ -4,55 +4,59 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
-        <title>Gerador de Currículo Online</title>
+        <title>Gerador de Curr&iacute;culo Online</title>
     </head>
     <body>
         <header id="title-subtitle">
-            <h1 id="title">Gerador de Currículo Online</h1>
-            <h3 id="subtitle">Preencha os dados abaixo para gerar seu currículo</h3>
+            <h1 id="title">Gerador de Curr&iacute;culo Online</h1>
+            <h3 id="subtitle">Preencha os dados abaixo para gerar seu curr&iacute;culo</h3>
         </header>
         <section id="page-content">
             <div id="row-basic-data">
                 <span id="input-name">
-                    <label>Nome</label>
+                    <label for="name">Nome</label>
                     <input type="text" name="name" id="name">
                 </span>
                 <span id="input-email">
-                    <label>Email</label>
+                    <label for="email">Email</label>
                     <input type="text" name="email" id="email">
                 </span>
+                <span id="input-ddd">
+                    <label for="ddd">DDD</label>
+                    <input type="number" name="ddd" id="ddd">
+                </span>
                 <span id="input-phone">
-                    <label>Celular</label>
-                    <input type="tel" name="phone" id="phone">
+                    <label for="phone">Celular</label>
+                    <input type="number" name="phone" id="phone">
                 </span>
             </div>
             <div id="row-address">
                 <span id="input-postal-code">
-                    <label>CEP</label>
+                    <label for="postal-code">CEP</label>
                     <input type="number" name="postal-code" id="postal-code">
                 </span>
                 <span id="input-address">
-                    <label>Endere&ccedil;o</label>
+                    <label for="address">Endere&ccedil;o</label>
                     <input type="text" name="address" id="address">
                 </span>
                 <span id="input-number-address">
-                    <label>N&uacute;mero</label>
+                    <label for="number-address">N&uacute;mero</label>
                     <input type="number" name="number-address" id="number-address">
                 </span>
                 <span id="input-number2">
-                    <label>Complemento</label>
+                    <label for="number2">Complemento</label>
                     <input type="text" name="number2" id="number2">
                 </span>
                 <span id="input-area">
-                    <label>Bairro</label>
+                    <label for="area">Bairro</label>
                     <input type="text" name="area" id="area">
                 </span>
                 <span id="input-city">
-                    <label>Cidade</label>
+                    <label for="city">Cidade</label>
                     <input type="text" name="city" id="city">
                 </span>
                 <span id="input-state">
-                    <label>UF</label>
+                    <label for="state">UF</label>
                     <select name="state" id="state">
                         <option value="">Selecione uma opção</option>
                         <option value="AC">Acre</option>
@@ -87,55 +91,57 @@
             </div>
             <div id="row-contact">
                 <span id="input-linkedin">
-                    <label>Linkedin</label>
+                    <label for="linkedin">Linkedin</label>
                     <input type="text" name="linkedin" id="linkedin">
                 </span>
-                <span id="input-social-network">
-                    <label>Rede Social</label>
-                    <input type="text" name="socialNetwork" id="socialNetwork">
-                </span>
                 <span id="input-site">
-                    <label>Site</label>
+                    <label for="site">Site/Rede Social</label>
                     <input type="text" name="site" id="site">
                 </span>
                 <span id="input-portfolio">
-                    <label>Portf&oacute;lio</label>
+                    <label for="portfolio">Portf&oacute;lio</label>
                     <input type="text" name="portfolio" id="portfolio">
                 </span>
             </div>
             <div id="row-resumo">
-                <label>Resumo Profissional</label>
-                <input type="text" name="resumo" id="resumo" maxlength="4000">
-            </div>
-            <div id="row-objetivo">
-                <label>Objetivo/&Aacute;rea de atua&ccedil;&atilde;o</label>
-                <input type="text" name="objetivo" id="objetivo">
+                <span id="input-resumo">
+                    <label for="resumo">Resumo Profissional</label>
+                    <textarea name="resumo" id="resumo"></textarea>
+                </span>
+                <span id="input-objetivo">
+                    <label for="objetivo">Objetivo/&Aacute;rea de atua&ccedil;&atilde;o</label>
+                    <textarea name="objetivo" id="objetivo"></textarea>
+                </span>
             </div>
             <div id="row-certifications">
                 <span id="input-faculdade">
-                    <label>Forma&ccedil;&atilde;o Acad&ecirc;mica</label>
-                    <input type="text">
+                    <label for="faculdade">Forma&ccedil;&atilde;o Acad&ecirc;mica</label>
+                    <textarea name="faculdade" id="faculdade"></textarea>
                 </span>
                 <span id="input-certificacao">
-                    <label>Certifica&ccedil;&atilde;o/Cursos</label>
-                    <input type="text" name="certificacao" id="certificacao">
+                    <label for="certificacao">Certifica&ccedil;&atilde;o/Cursos</label>
+                    <textarea name="certificacao" id="certificacao"></textarea>
                 </span>
             </div>
             <div id="row-habilidades">
-                <label>Habilidades</label>
-                <input type="text" name="habilidades" id="habilidades" maxlength="4000">
-            </div>
-            <div id="row-idiomas">
-                <label>Idiomas</label>
-                <input type="text" name="idiomas" id="idiomas" maxlength="4000">
+                <span id="input-habilidades">
+                    <label for="habilidades">Habilidades</label>
+                    <textarea name="habilidades" id="habilidades"></textarea>
+                </span>
+                <span id="input-idiomas">
+                    <label for="idiomas">Idiomas</label>
+                    <textarea name="idiomas" id="idiomas"></textarea>
+                </span>
             </div>
             <div id="row-xp">
-                <label>Experi&ecirc;ncia Profissional</label>
-                <input type="text">
-            </div>
-            <div id="row-extras">
-                <label>Informa&ccedil;&otilde;es Complementares</label>
-                <input type="text" name="extras" id="extras">
+                <span id="input-xp">
+                    <label for="xp">Experi&ecirc;ncia Profissional</label>
+                    <textarea name="xp" id="xp"></textarea>
+                </span>
+                <span id="input-extras">
+                    <label for="extras">Informa&ccedil;&otilde;es Complementares</label>
+                    <textarea name="extras" id="extras"></textarea>
+                </span>
             </div>
             <div id="botao">
                 <button type="button" id="botao-button" onclick="gerarCurriculo();">Gerar</button>
