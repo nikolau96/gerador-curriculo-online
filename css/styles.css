@@ -47,6 +47,7 @@ body{
     border: none;
     box-shadow: 50%;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 span{
