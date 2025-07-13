@@ -29,6 +29,16 @@ function gerarCurriculo(){
         if(i === ""){
             alert('Atenção! Preencha todos os campos');
             return;
+        }else{
+            document.writeln(`<html><head>`);
+            document.writeln(`<title>Gerador de Curr&iacute;culo Online</title>`);
+            document.writeln(`</head>`);
+            document.writeln(`<body>`);
+            document.writeln(`<p>`);
+            document.writeln(i);
+            document.writeln(`</p>`);
+            document.writeln(`</body></html>`);
+            alert('Curr\u00edculo gerado com sucesso! Aperte CTRL + P para imprimir');
         }
     }
 }
